@@ -8,7 +8,6 @@ $('.human-air-flat').show();
 }, 6000)
 // 10 секунда самолета
 setTimeout(function(){
-$('.airplane').hide();
-$('.human-air-flat').hide();
-};
-}, 10500)
+  $('.airplane').hide();
+  $('.human-air-flat').hide();
+}, 10500);
