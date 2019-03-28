@@ -11,7 +11,7 @@
 }
 /**/
 @-webkit-keyframes skyup {
-    100% {top: -100%;}
+    100% {top: -150%;}
 }
 /**/
 @-webkit-keyframes airplane {
@@ -33,7 +33,9 @@ body {
 	background-color:#52B3D9;
   overflow: hidden;
 }
-
+body .clouds,body .clouds:nth-of-type(2), body .clouds:nth-of-type(3) {
+  -webkit-animation: skyup 3s;
+}
 .cloud {
 	position: absolute;
 	background-color: #C5EFF7;
@@ -197,4 +199,98 @@ body {
 }
 #human5 {
   -webkit-animation: human5 10s;
+}
+/*LINE*/
+@-webkit-keyframes line {
+    100% {top:-150%;}
+}
+#white-line .line {
+  top: 120%;
+  left: 30%;
+  position: absolute;
+  background-color: white;
+  width: 15px;
+  height: 400px;
+  display: none;
+  -webkit-animation: line 4s;
+}
+#white-line .line:nth-of-type(2) {
+  top: 154%;
+  left: 13%;
+}
+#white-line .line:nth-of-type(3) {
+  top: 105%;
+  left: 66%;
+}
+#white-line .line:nth-of-type(4) {
+  top: 115%;
+  left: 78%;
+}
+#white-line .line:nth-of-type(5) {
+  top: 165%;
+  left: 50%;
+}
+
+/*HumanBig*/
+@-webkit-keyframes human-p1 {
+    0%{top: 215%;}
+    100% {top:15%;}
+}
+@-webkit-keyframes human-p2 {
+    0%{top: 205%;}
+    100% {top:5%;}
+}
+@-webkit-keyframes human-p3 {
+    0%{top: 245%;}
+    100% {top:45%;}
+}
+@-webkit-keyframes human-p4 {
+    0%{top: 215%;}
+    100% {top:15%;}
+}
+@-webkit-keyframes human-p5 {
+    0%{top: 250%;}
+    100% {top:50%;}
+}
+
+
+.parashutist {
+  width: 256px;
+  height: 400px;
+  background-size: contain;
+  position: absolute;
+}
+
+#parashutist1 .parashutist {
+  display: none;
+}
+#human-p1 {
+  background-image: url('../img/parashut1.gif');
+  top: 15%;
+  left: 5%;
+  -webkit-animation: human-p1 4s;
+}
+#human-p2 {
+  background-image: url('../img/parashut1.gif');
+  top: 5%;
+  left: 25%;
+  -webkit-animation: human-p2 4s;
+}
+#human-p3 {
+  background-image: url('../img/parashut1.gif');
+  top: 45%;
+  left: 40%;
+  -webkit-animation: human-p3 4s;
+}
+#human-p4 {
+  background-image: url('../img/parashut1.gif');
+  top: 15%;
+  left: 60%;
+  -webkit-animation: human-p4 4s;
+}
+#human-p5 {
+  background-image: url('../img/parashut1.gif');
+  top: 50%;
+  left: 80%;
+  -webkit-animation: human-p5 4s;
 }
