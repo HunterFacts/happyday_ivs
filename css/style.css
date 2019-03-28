@@ -97,7 +97,7 @@ body {
 .airplane {
   position: absolute;
     width: 500px;
-    height: 500px;
+    height: 200px;
     /* border-top: 100px solid transparent; */
     /* border-left: 150px solid #34495E; */
     /* border-bottom: 100px solid transparent; */
