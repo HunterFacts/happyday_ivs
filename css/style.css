@@ -1,3 +1,5 @@
+
+/**/
 @-webkit-keyframes sky {
     from {left: 110%}
     to {left: -30%;}
@@ -7,24 +9,29 @@
     from {left: 110%}
     to {left: -30%;}
 }
-
+/**/
+@-webkit-keyframes skyup {
+    100% {top: -100%;}
+}
+/**/
 @-webkit-keyframes airplane {
+    0% {top: 60%; left:-30%;}
+    50% {top:40%; left:50%;}
+    100% {top:20%; left:150%;}
+}
+
+
+
+/*@keyframes airplane {
     0% {top: 40%; left:20%;}
     25% {top: 55%; left:40%;}
     75% {top:30%; left:10%;}
     100% {top:40%; left:20%;}
-}
-
-
-@keyframes airplane {
-    0% {top: 40%; left:20%;}
-    25% {top: 55%; left:40%;}
-    75% {top:30%; left:10%;}
-    100% {top:40%; left:20%;}
-}
+}*/
 
 body {
 	background-color:#52B3D9;
+  overflow: hidden;
 }
 
 .cloud {
@@ -39,6 +46,16 @@ body {
 	-webkit-animation: sky 5s infinite;
 }
 
+.human-air-flat {
+  position: absolute;
+  z-index: 99;
+  width: 40px;
+  /* background-size: contain; */
+  height: 20px;
+  background: url(../img/skydiver.png) no-repeat;
+  background-size: contain;
+  display: none;
+}
 
 .cloud::before {
 	content:"";
@@ -107,10 +124,10 @@ body {
     background-size: contain;
     top: 40%;
     left: 20%;
-    animation: airplane 15s infinite;
-    -webkit-animation: airplane 15s infinite;
+    animation: airplane 15s;
+    -webkit-animation: airplane 15s;
 }
-}
+
 /*
 .airplane::before {
 	border-bottom: 27px solid #4B77BC;
@@ -142,3 +159,42 @@ body {
 	margin-top: -2px;
 	transform: rotate(182deg) skewX(-47deg);
 }*/
+
+/*Humans*/
+@-webkit-keyframes human1 {
+    0% {top:45%; left:60%;}
+    100% {top:140%; left:50%;}
+}
+@-webkit-keyframes human2 {
+    0% {top:43%; left:65%;}
+    100% {top:140%; left:60%;}
+}
+
+@-webkit-keyframes human3 {
+    0% {top:43%; left:63%;}
+    100% {top:140%; left:55%;}
+}
+@-webkit-keyframes human4 {
+    0% {top:40%; left:70%;}
+    100% {top:140%; left:80%;}
+}
+@-webkit-keyframes human5 {
+    0% {top:40%; left:70%;}
+    100% {top:140%; left:60%;}
+}
+
+#human1 {
+  -webkit-animation: human1 10s;
+}
+#human2 {
+  -webkit-animation: human2 10s;
+}
+#human3 {
+  -webkit-animation: human3 10s;
+}
+#human4 {
+  -webkit-animation: human4 10s;
+}
+#human5 {
+  -webkit-animation: human5 10s;
+}
