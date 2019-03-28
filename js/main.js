@@ -25,3 +25,15 @@ setTimeout(function(){
   $('#white-line .line').show();
   $('#parashutist1 .parashutist').show();
 }, 12500);
+
+function reset(i){
+  i.css("background-image","url('./img/parashutistOtrk1.png')");;
+}
+
+$('.parashutist').click(function(){
+  /*alert($(this).attr('id'));*/
+  $(this).css("background-image","url('./img/openparashut1.gif')");
+  $(this).css("height","512px");
+  var num = parseInt($(this).attr("id").replace(/\D+/g,""));
+  setTimeout(reset, 1200,$(this));
+});
