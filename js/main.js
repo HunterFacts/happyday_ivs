@@ -7,9 +7,9 @@ var slova = [
   'Игорь, а мы точно хотим без запасок прыгать?'
 ];
 //Тестовый таймер
-setInterval(function(){
+/*setInterval(function(){
 $('#timer').html(Number($('#timer').text()) + 1);
-}, 1000);
+}, 1000);*/
 
 // 6 секунда самолета
 setTimeout(function(){
