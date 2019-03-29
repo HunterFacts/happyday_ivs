@@ -184,6 +184,10 @@ body .clouds,body .clouds:nth-of-type(2), body .clouds:nth-of-type(3) {
     0% {top:40%; left:70%;}
     100% {top:140%; left:60%;}
 }
+@-webkit-keyframes human6 {
+    0% {top:40%; left:65%;}
+    100% {top:140%; left:50%;}
+}
 
 #human1 {
   -webkit-animation: human1 10s;
@@ -199,6 +203,9 @@ body .clouds,body .clouds:nth-of-type(2), body .clouds:nth-of-type(3) {
 }
 #human5 {
   -webkit-animation: human5 10s;
+}
+#human6 {
+  -webkit-animation: human6 10s;
 }
 /*LINE*/
 @-webkit-keyframes line {
@@ -313,7 +320,7 @@ body .clouds,body .clouds:nth-of-type(2), body .clouds:nth-of-type(3) {
   height: 400px;
   background-size: contain;
   position: absolute;
-  font-size: 40px;
+  font-size: 25px;
   padding-top: -20px;
   text-align: center;
   color: white;
@@ -331,31 +338,31 @@ body .clouds,body .clouds:nth-of-type(2), body .clouds:nth-of-type(3) {
   -webkit-animation: human-p1 4s;
 }
 #human-p2 {
-  background-image: url('../img/parashut1.gif');
+  background-image: url('../img/parashut2_test.gif');
   top: 5%;
   left: 45%;
   -webkit-animation: human-p2 4s;
 }
 #human-p3 {
-  background-image: url('../img/parashut1.gif');
+  background-image: url('../img/parashut3.gif');
   top: 45%;
   left: 75%;
   -webkit-animation: human-p3 4s;
 }
 #human-p4 {
-  background-image: url('../img/parashut1.gif');
+  background-image: url('../img/parashut4.gif');
   top: 40%;
   left: 15%;
   -webkit-animation: human-p4 4s;
 }
 #human-p5 {
-  background-image: url('../img/parashut1.gif');
+  background-image: url('../img/parashut5.gif');
   top: 5%;
   left: 40%;
   -webkit-animation: human-p5 4s;
 }
 #human-p6 {
-  background-image: url('../img/parashut1.gif');
+  background-image: url('../img/parashut6.gif');
   top: 40%;
   left: 75%;
   -webkit-animation: human-p6 4s;
@@ -371,7 +378,7 @@ body .clouds,body .clouds:nth-of-type(2), body .clouds:nth-of-type(3) {
   width: 2000px;
   height: 1200px;
   background-position: bottom;
-  background: url('../img/holm-test.png') no-repeat;
+  background: url('../img/holm.png') no-repeat;
   background-size: 100%;
   position: absolute;
   bottom: 0;

@@ -1,10 +1,10 @@
 var slova = [
-  'Спасибо!',
-  'Благодарю!',
-  'Поздравляю!',
-  'Лучший!',
-  'Самый!',
-  'Круто!'
+  'Я ща не могу, меня тут чет намотало',
+  'Ну это, эээ, я считаю, что важно отметить следующий факт… Во-первых, я предлагаю всем вместе задуматься',
+  'Я еще 10 лет назад говорил!',
+  'Через шину надо было запускать, через шину…',
+  'Чет в этом ГИС не вижу слоя с точками приземления',
+  'Игорь, а мы точно хотим без запасок прыгать?'
 ];
 //Тестовый таймер
 setInterval(function(){
@@ -23,10 +23,8 @@ function randomInteger(min, max) {
     rand = Math.round(rand);
     return rand;
 }
-function giveString(){
-  let nums = randomInteger(0,slova.length);
-  let slovo = slova[nums];
-  slova.splice(nums, 1);
+function giveString(num){
+  let slovo = slova[num - 1];
   return slovo;
 }
 // 10 секунда самолета
@@ -83,15 +81,16 @@ $('#knopka2').click(function(){
   setTimeout(removeHuman2, 3000);
 });
 
-function reset(i){
-  i.css("background-image","url('./img/parashutistOtrk1.png')");
-  i.html(giveString());
+function reset(i, num){
+  i.css("background-image","url('./img/parashutistOtrk"+num+".png')");
+  i.html(giveString(num));
 }
 
 $('.parashutist').click(function(){
   /*alert($(this).attr('id'));*/
-  $(this).css("background-image","url('./img/openparashut1.gif')");
-  $(this).css("height","512px");
   var num = parseInt($(this).attr("id").replace(/\D+/g,""));
-  setTimeout(reset, 1200,$(this));
+  $(this).css("background-image","url('./img/openparashut"+num+".gif')");
+  $(this).css("height","512px");
+
+  setTimeout(reset, 1200,$(this), num);
 });
