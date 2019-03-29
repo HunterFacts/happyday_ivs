@@ -244,53 +244,138 @@ body .clouds,body .clouds:nth-of-type(2), body .clouds:nth-of-type(3) {
     0%{top: 245%;}
     100% {top:45%;}
 }
+
+@-webkit-keyframes human-p1-up {
+    0%{top: 15%;}
+    100% {top:-85%;}
+}
+@-webkit-keyframes human-p2-up {
+    0%{top: 5%;}
+    100% {top:-95%;}
+}
+@-webkit-keyframes human-p3-up {
+    0%{top: 45%;}
+    100% {top:-65%;}
+}
+@-webkit-keyframes knopka1-up {
+    0%{top: 80%;}
+    100% {top:-20%;}
+}
+
 @-webkit-keyframes human-p4 {
-    0%{top: 215%;}
-    100% {top:15%;}
+    0%{top: 240%;}
+    100% {top:40%;}
 }
 @-webkit-keyframes human-p5 {
-    0%{top: 250%;}
-    100% {top:50%;}
+    0%{top: 205%;}
+    100% {top:5%;}
+}
+@-webkit-keyframes human-p6 {
+    0%{top: 240%;}
+    100% {top:40%;}
 }
 
+@-webkit-keyframes human-p4-up {
+    0%{top: 40%;}
+    100% {top:-60%;}
+}
+@-webkit-keyframes human-p5-up {
+    0%{top: 5%;}
+    100% {top:-95%;}
+}
+@-webkit-keyframes human-p6-up {
+    0%{top: 40%;}
+    100% {top:-60%;}
+}
 
+@-webkit-keyframes knopka1 {
+    0%{top: 280%;}
+    100% {top:80%;}
+}
+.parashut-knopka {
+  background: url('../img/strelka.png');
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 45%;
+  top: 80%;
+  transform:rotate(90deg);
+  -webkit-animation: knopka1 4s;
+  cursor: pointer;
+}
+.parashut-knopka:hover{
+  border-radius: 50%;
+  border: solid 4px white;
+}
 .parashutist {
   width: 256px;
   height: 400px;
   background-size: contain;
   position: absolute;
+  font-size: 40px;
+  padding-top: -20px;
+  text-align: center;
+  color: white;
+  font-family: "Verdana", sans-serif;
+  cursor: pointer;
 }
 
-#parashutist1 .parashutist {
+#parashutist1 .parashutist,#parashutist2 .parashutist, .parashut-knopka  {
   display: none;
 }
 #human-p1 {
   background-image: url('../img/parashut1.gif');
   top: 15%;
-  left: 5%;
+  left: 10%;
   -webkit-animation: human-p1 4s;
 }
 #human-p2 {
   background-image: url('../img/parashut1.gif');
   top: 5%;
-  left: 25%;
+  left: 45%;
   -webkit-animation: human-p2 4s;
 }
 #human-p3 {
   background-image: url('../img/parashut1.gif');
   top: 45%;
-  left: 40%;
+  left: 75%;
   -webkit-animation: human-p3 4s;
 }
 #human-p4 {
   background-image: url('../img/parashut1.gif');
-  top: 15%;
-  left: 60%;
+  top: 40%;
+  left: 15%;
   -webkit-animation: human-p4 4s;
 }
 #human-p5 {
   background-image: url('../img/parashut1.gif');
-  top: 50%;
-  left: 80%;
+  top: 5%;
+  left: 40%;
   -webkit-animation: human-p5 4s;
+}
+#human-p6 {
+  background-image: url('../img/parashut1.gif');
+  top: 40%;
+  left: 75%;
+  -webkit-animation: human-p6 4s;
+}
+
+/*Холм*/
+@-webkit-keyframes holm {
+    0% {bottom: -100%}
+    100% {bottom: 0%;}
+}
+.holm {
+  display: none;
+  width: 2000px;
+  height: 1200px;
+  background-position: bottom;
+  background: url('../img/holm-test.png') no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+  left: 0;
+  -webkit-animation: holm 4s;
 }
