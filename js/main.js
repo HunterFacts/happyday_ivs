@@ -94,3 +94,6 @@ $('.parashutist').click(function(){
 
   setTimeout(reset, 1200,$(this), num);
 });
+function Reload(){
+  location.reload();
+}

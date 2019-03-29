@@ -386,3 +386,22 @@ body .clouds,body .clouds:nth-of-type(2), body .clouds:nth-of-type(3) {
   left: 0;
   -webkit-animation: holm 4s;
 }
+.btn {
+  border-radius: 8px;
+  background-color: #26a69a;
+  color: white;
+  padding: 5px;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  font-size: 14px;
+  outline: 0;
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
