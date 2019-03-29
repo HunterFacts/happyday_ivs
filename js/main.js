@@ -45,6 +45,10 @@ setTimeout(function(){
   $('#parashutist1 .parashutist, #knopka1').show();
 }, 12500);
 
+setTimeout(function(){
+  $('#white-line .line').hide();
+}, 14500);
+
 function removeHuman(){
   $('#human-p1').hide();
   $('#human-p2').hide();
